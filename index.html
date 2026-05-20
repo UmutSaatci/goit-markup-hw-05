@@ -49,7 +49,7 @@
           <h1 class="section-title">
             Effective Solutions<br />for Your Business
           </h1>
-          <button type="button">Order Service</button>
+        <button type="button" class="modal-open-btn" data-modal-open>Order Service</button>
         </div>
       </section>
 
@@ -415,6 +415,9 @@
           </ul>
         </div>
       </section>
+
+ 
+
     </main>
 
     <footer class="footer">
@@ -455,7 +458,107 @@
             </div>
         </div>
 
+        <div class="subscribe">
+          <p>Subscribe</p>
+          <form name="subscribe-form">
+            <div class="subscribe-form" >
+             
+              <div class="input-wrap">
+                <input type="email" name="user_email" placeholder="E-mail" autocomplete="off">  
+              </div>
+                
+              <button type="submit" class="subscribe-btn">
+                Subscribe
+                <svg class="subscribe-icon">
+                  <use href="./images/icons.svg/symbol-defs.svg#icon-send" />
+                </svg>               
+              </button>
+             
+            </div>    
+            </form>
+        </div>
+
+
       </div>
     </footer>
+
+
+    <div class="backdrop" data-modal>
+      <div class="modal">
+   
+        <button type="button" class="modal-close-btn" data-modal-close aria-label="Modalı kapat">
+          <svg width="8" height="8">
+            <use href="./images/icons.svg/symbol-defs.svg#icon-close" />
+          </svg>
+        </button>
+    
+        <p class="form-title">Leave your contacts and we will call you back</p>
+    
+          <form name="application-form">
+            <div class="form-element">
+              <label for="name">Name</label>
+              <div class="input-wrap">
+                <input type="text" name="name" id="name" required  autocomplete="off">
+                <svg class="form-icon">
+                  <use href="./images/icons.svg/symbol-defs.svg#icon-person" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="form-element">
+              <label for="phone">Phone</label>
+              <div class="input-wrap">
+                <input type="text" name="phone" id="phone" required  autocomplete="off">
+                <svg class="form-icon">
+                  <use href="./images/icons.svg/symbol-defs.svg#icon-phone-form" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="form-element">
+              <label for="email">E-mail</label>
+              <div class="input-wrap">
+                <input type="email" name="email" id="email" required autocomplete="off">
+                <svg class="form-icon">
+                  <use href="./images/icons.svg/symbol-defs.svg#icon-email-form" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="form-element">
+              <label for="comment">Comment</label>
+              <div class="input-wrap">
+                <textarea name="comment" id="comment"  rows="5"   placeholder="Text input"></textarea>
+               
+              </div>
+            </div>
+
+            <div class="form-checkbox">
+           
+              <div class="input-wrap">
+                <input type="checkbox" name="privacy" id="privacy" value="true" required  class="visually-hidden">
+                <label for="privacy" class="checkbox-label">
+                  <span class="custom-checkbox">
+                    <svg width="10" height="8">
+                      <use href="./images/icons.svg/symbol-defs.svg#icon-check" />
+                    </svg>
+                  </span>
+                  I accept the terms and conditions of the&nbsp;<a href="#" class="privacy-link">Privacy Policy</a>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-button">
+             
+              <button type="submit" class="form-btn">
+                Send           
+              </button>
+            </div>
+
+          </form>
+      </div>
+    </div>
+
+
   </body>
 </html>
